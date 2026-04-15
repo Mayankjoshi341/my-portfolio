@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CO₂ Emission Analysis & Forecasting | Project Details</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body class="project-detail-page">
+
+<div class="detail-shell">
+
+    <!-- HERO -->
+    <section class="detail-hero">
+
+        <article class="detail-hero-main">
+            <a class="back-link" href="../index.html#projects">← Back to Projects</a>
+
+            <span class="detail-status status-live">Time-Series Project</span>
+
+            <h1>CO₂ Emission Analysis & Forecasting</h1>
+
+            <p class="detail-summary">
+                A time-series analysis and forecasting project that models global CO₂ emissions using machine learning,
+                feature engineering, and compares recursive and direct prediction strategies.
+            </p>
+
+            <div class="detail-tags">
+                <span>Python</span>
+                <span>Time Series</span>
+                <span>Machine Learning</span>
+                <span>Regression</span>
+                <span>Forecasting</span>
+            </div>
+
+            <div class="detail-links">
+                <a href="#">GitHub</a>
+                <a href="#">LinkedIn</a>
+            </div>
+        </article>
+
+        <aside class="detail-sidebar">
+
+            <div class="detail-card">
+                <span class="detail-label">Project Snapshot</span>
+                <h3>Real-World Relevance</h3>
+                <p>
+                    Helps understand long-term environmental trends and predict future emission patterns,
+                    supporting sustainability and policy decisions.
+                </p>
+            </div>
+
+            <div class="detail-card">
+                <span class="detail-label">Recruiter Signal</span>
+                <h3>Advanced Modeling</h3>
+                <p>
+                    Demonstrates time-series feature engineering, model comparison,
+                    and forecasting strategies beyond basic EDA.
+                </p>
+            </div>
+
+        </aside>
+    </section>
+
+    <!-- CONTENT -->
+    <section class="detail-content">
+
+        <!-- PROBLEM -->
+        <article class="detail-section">
+            <h2>Problem And Solution</h2>
+
+            <div class="detail-grid">
+
+                <div class="detail-card">
+                    <h3>Problem</h3>
+                    <p>
+                        Understanding CO₂ emission trends requires not only historical analysis
+                        but also reliable forecasting to anticipate future environmental impact.
+                    </p>
+                </div>
+
+                <div class="detail-card">
+                    <h3>Solution</h3>
+                    <p>
+                        Built a system that combines exploratory analysis with machine learning-based
+                        forecasting to analyze past trends and predict future emissions.
+                    </p>
+                </div>
+
+            </div>
+        </article>
+
+        <!-- DATA & FEATURES -->
+        <article class="detail-section">
+            <h2>Data And Feature Engineering</h2>
+
+            <div class="detail-grid">
+
+                <div class="detail-card">
+                    <h3>Dataset</h3>
+                    <p>
+                        Global CO₂ emission dataset (Kaggle) covering historical emissions from ~1700 to 2023.
+                    </p>
+                </div>
+
+                <div class="detail-card">
+                    <h3>Feature Engineering</h3>
+                    <ul>
+                        <li>Lag features (lag1, lag2)</li>
+                        <li>Growth rate calculation</li>
+                        <li>Year as temporal feature</li>
+                    </ul>
+                </div>
+
+            </div>
+        </article>
+
+        <!-- EDA -->
+        <article class="detail-section">
+            <h2>Exploratory Data Analysis</h2>
+
+            <ul>
+                <li>Rapid growth during industrialization (1950–1970)</li>
+                <li>Acceleration post-2000</li>
+                <li>Recent stabilization trends due to global initiatives</li>
+            </ul>
+
+        </article>
+
+        <!-- MODEL -->
+        <article class="detail-section">
+            <h2>Model Development</h2>
+
+            <div class="detail-grid">
+
+                <div class="detail-card">
+                    <h3>Baseline</h3>
+                    <p>Lag-based baseline model (MAE ≈ 0.35)</p>
+                </div>
+
+                <div class="detail-card">
+                    <h3>Models Used</h3>
+                    <ul>
+                        <li>Linear Regression</li>
+                        <li>Random Forest Regression</li>
+                    </ul>
+                </div>
+
+                <div class="detail-card">
+                    <h3>Insights</h3>
+                    <p>
+                        Random Forest captured non-linear patterns better,
+                        while Linear Regression provided stable trend estimation.
+                    </p>
+                </div>
+
+            </div>
+        </article>
+
+        <!-- FORECASTING -->
+        <article class="detail-section">
+            <h2>Forecasting Techniques</h2>
+
+            <div class="detail-grid">
+
+                <div class="detail-card">
+                    <h3>Recursive Forecasting</h3>
+                    <p>
+                        Uses previous predictions as input. More realistic but error accumulates over time.
+                    </p>
+                </div>
+
+                <div class="detail-card">
+                    <h3>Direct Forecasting</h3>
+                    <p>
+                        Predicts future values independently. More stable but less adaptive.
+                    </p>
+                </div>
+
+            </div>
+        </article>
+
+        <!-- RESULTS -->
+        <article class="detail-section">
+            <h2>Results And Insights</h2>
+            <p>
+                Forecasts indicate slower emission growth and potential stabilization trends,
+                reflecting global sustainability efforts and policy changes.
+            </p>
+        </article>
+
+        <!-- FUTURE -->
+        <article class="detail-section">
+            <h2>Future Improvements</h2>
+            <ul>
+                <li>ARIMA / SARIMA models</li>
+                <li>Tableau dashboard integration</li>
+                <li>Country-level forecasting</li>
+            </ul>
+        </article>
+
+    </section>
+
+</div>
+
+</body>
+</html>

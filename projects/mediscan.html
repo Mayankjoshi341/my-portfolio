@@ -2,69 +2,193 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>MediScan Project</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MediScan | Project Details</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../style.css">
 </head>
-<body>
 
-<nav>
-    <h2>Mayank</h2>
-    <ul>
-        <li><a href="../index.html">Home</a></li>
-    </ul>
-</nav>
+<body class="project-detail-page">
 
-<section>
-    <div class="content-box">
-           <h1>🩺 MediScan – Health Risk Guidance System</h1>
+<div class="detail-shell">
 
-    <h2>🚩 Problem</h2>
-    <p>
-        Traditional symptom checkers often provide vague or incomplete results,
-        lacking actionable insights and real-world guidance.
-    </p>
+    <!-- HERO -->
+    <section class="detail-hero">
 
-    <h2>💡 Solution</h2>
-    <p>
-        Built an ML-powered system that predicts diseases based on user symptoms
-        and provides detailed guidance including precautions, severity, and recommendations.
-    </p>
+        <article class="detail-hero-main">
+            <a class="back-link" href="../index.html#projects">← Back to Projects</a>
 
-    <h2>🔥 Key Features</h2>
-    <ul>
-        <li>Top 3 disease predictions with probability</li>
-        <li>Severity level (1–5 scale)</li>
-        <li>Precautions and home remedies</li>
-        <li>Location-based hospital recommendations</li>
-        <li>Interactive map integration</li>
-        <li>Email report generation</li>
-    </ul>
+            <span class="detail-status status-live">Deployed System</span>
 
-    <h2>🧠 Tech Stack</h2>
-    <p>
-        Python, Scikit-learn, Pandas, NumPy, Streamlit, JavaScript
-    </p>
+            <h1>MediScan – Health Risk Guidance System</h1>
 
-    <h2>📊 Dataset</h2>
-    <p>
-        Synthetic healthcare dataset (IBM)
-    </p>
+            <p class="detail-summary">
+                A machine learning-based healthcare system that predicts diseases from user symptoms
+                and provides actionable guidance including severity analysis, precautions, and nearby hospital recommendations.
+            </p>
 
-    <h2>📈 Results</h2>
-    <p>
-        Achieved ~99% accuracy (due to synthetic dataset) and built a complete end-to-end deployed system.
-    </p>
+            <div class="detail-tags">
+                <span>Python</span>
+                <span>Scikit-learn</span>
+                <span>Streamlit</span>
+                <span>Machine Learning</span>
+                <span>Geolocation</span>
+            </div>
 
-    <h2>⚠️ Note</h2>
-    <p>
-        Model performance may vary on real-world data. Future work includes training on real clinical datasets.
-    </p>
+            <div class="detail-links">
+                <a href="https://github.com/Mayankjoshi341/MEDISCAN">GitHub</a>
+                <a href="#">LinkedIn</a>
+                <a href="#">Live Demo</a>
+            </div>
+        </article>
 
-    <br>
+        <aside class="detail-sidebar">
 
-    <a href="..." class="btn">View GitHub Repository</a>
-    </div>
-</section>
+            <div class="detail-card">
+                <span class="detail-label">Project Snapshot</span>
+                <h3>Real-World Utility</h3>
+                <p>
+                    Moves beyond prediction by guiding users on what actions to take based on their symptoms and severity level.
+                </p>
+            </div>
+
+            <div class="detail-card">
+                <span class="detail-label">Recruiter Signal</span>
+                <h3>End-To-End ML System</h3>
+                <p>
+                    Demonstrates model building, system design, deployment, and real-world usability in one integrated project.
+                </p>
+            </div>
+
+        </aside>
+    </section>
+
+    <!-- CONTENT -->
+    <section class="detail-content">
+
+        <!-- PROBLEM & SOLUTION -->
+        <article class="detail-section">
+            <h2>Problem And Solution</h2>
+
+            <div class="detail-grid">
+
+                <div class="detail-card">
+                    <h3>Problem</h3>
+                    <p>
+                        Most symptom-based systems provide limited or vague predictions without actionable guidance,
+                        leaving users uncertain about next steps or severity of their condition.
+                    </p>
+                </div>
+
+                <div class="detail-card">
+                    <h3>Solution</h3>
+                    <p>
+                        Built a system that predicts diseases and enhances the output with severity levels,
+                        precautions, and real-world recommendations to help users make informed decisions.
+                    </p>
+                </div>
+
+            </div>
+        </article>
+
+        <!-- FEATURES -->
+        <article class="detail-section">
+            <h2>Key Features</h2>
+
+            <div class="detail-grid">
+
+                <div class="detail-card">
+                    <h3>Disease Prediction</h3>
+                    <ul>
+                        <li>Multi-class classification (41 diseases)</li>
+                        <li>Top 3 predictions with confidence levels</li>
+                    </ul>
+                </div>
+
+                <div class="detail-card">
+                    <h3>Health Guidance</h3>
+                    <ul>
+                        <li>Severity scoring (1–5 scale)</li>
+                        <li>Precautions and do’s/don’ts</li>
+                        <li>Home remedies and suggestions</li>
+                    </ul>
+                </div>
+
+                <div class="detail-card">
+                    <h3>Smart Recommendations</h3>
+                    <ul>
+                        <li>Actionable insights based on severity</li>
+                        <li>Suggestions like rest, medication, or emergency care</li>
+                    </ul>
+                </div>
+
+                <div class="detail-card">
+                    <h3>Location Intelligence</h3>
+                    <ul>
+                        <li>Detects user location using JavaScript</li>
+                        <li>Recommends top nearby hospitals</li>
+                        <li>Interactive map integration</li>
+                    </ul>
+                </div>
+
+                <div class="detail-card">
+                    <h3>Output System</h3>
+                    <ul>
+                        <li>Email-based report delivery</li>
+                        <li>Complete health summary report</li>
+                    </ul>
+                </div>
+
+            </div>
+        </article>
+
+        <!-- MODEL -->
+        <article class="detail-section">
+            <h2>Model And Data</h2>
+
+            <div class="detail-grid">
+
+                <div class="detail-card">
+                    <h3>Model</h3>
+                    <p>
+                        Built a multi-class classification model trained on symptom-disease relationships
+                        to predict the most likely conditions.
+                    </p>
+                </div>
+
+                <div class="detail-card">
+                    <h3>Dataset</h3>
+                    <p>
+                        Synthetic healthcare dataset (IBM), enabling fast prototyping and controlled experimentation.
+                    </p>
+                </div>
+
+            </div>
+        </article>
+
+        <!-- RESULTS -->
+        <article class="detail-section">
+            <h2>Results And Observations</h2>
+            <p>
+                Achieved high accuracy (~99%) due to synthetic dataset. Real-world performance may vary,
+                and future work includes training on real clinical datasets for improved generalization.
+            </p>
+        </article>
+
+        <!-- FUTURE -->
+        <article class="detail-section">
+            <h2>Future Improvements</h2>
+            <ul>
+                <li>Integration with real medical datasets</li>
+                <li>Improved explainability of predictions</li>
+                <li>Enhanced recommendation engine</li>
+            </ul>
+        </article>
+
+    </section>
+
+</div>
+
 </body>
 </html>
-

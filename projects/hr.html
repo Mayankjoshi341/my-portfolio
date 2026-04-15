@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HR Attrition Prediction System | Project Details</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body class="project-detail-page">
+
+<div class="detail-shell">
+
+    <!-- HERO -->
+    <section class="detail-hero">
+
+        <article class="detail-hero-main">
+            <a class="back-link" href="../index.html#projects">← Back to Projects</a>
+
+            <span class="detail-status status-live">Deployed System</span>
+
+            <h1>HR Attrition Prediction System</h1>
+
+            <p class="detail-summary">
+                A supervised machine learning system that predicts employee attrition and provides actionable insights
+                through both predictive modeling and an interactive analytics dashboard.
+            </p>
+
+            <div class="detail-tags">
+                <span>Python</span>
+                <span>Scikit-learn</span>
+                <span>Machine Learning</span>
+                <span>Streamlit</span>
+                <span>Power BI</span>
+            </div>
+
+            <div class="detail-links">
+                <a href="#">GitHub</a>
+                <a href="#">LinkedIn</a>
+                <a href="#">Live Demo</a>
+            </div>
+        </article>
+
+        <aside class="detail-sidebar">
+
+            <div class="detail-card">
+                <span class="detail-label">Project Snapshot</span>
+                <h3>Business Problem</h3>
+                <p>
+                    Helps organizations identify employees at risk of leaving and take proactive actions
+                    to reduce workforce attrition.
+                </p>
+            </div>
+
+            <div class="detail-card">
+                <span class="detail-label">Recruiter Signal</span>
+                <h3>ML + Analytics</h3>
+                <p>
+                    Combines machine learning, data pipelines, and dashboarding to deliver both prediction
+                    and business insights.
+                </p>
+            </div>
+
+        </aside>
+    </section>
+
+    <!-- CONTENT -->
+    <section class="detail-content">
+
+        <!-- PROBLEM & SOLUTION -->
+        <article class="detail-section">
+            <h2>Problem And Solution</h2>
+
+            <div class="detail-grid">
+
+                <div class="detail-card">
+                    <h3>Problem</h3>
+                    <p>
+                        Organizations struggle to identify employees likely to leave, leading to unexpected attrition
+                        and increased hiring and training costs.
+                    </p>
+                </div>
+
+                <div class="detail-card">
+                    <h3>Solution</h3>
+                    <p>
+                        Built a machine learning model that predicts attrition risk and complements it with
+                        visual dashboards for easier decision-making.
+                    </p>
+                </div>
+
+            </div>
+        </article>
+
+        <!-- DATA & EDA -->
+        <article class="detail-section">
+            <h2>Data And Analysis</h2>
+
+            <div class="detail-grid">
+
+                <div class="detail-card">
+                    <h3>Dataset</h3>
+                    <p>
+                        Kaggle HR dataset with ~4,190 records and 41 features including performance,
+                        satisfaction, and job-related attributes.
+                    </p>
+                </div>
+
+                <div class="detail-card">
+                    <h3>Key Insights</h3>
+                    <ul>
+                        <li>Sales & technical roles show higher attrition</li>
+                        <li>Managers show higher retention</li>
+                        <li>Low job satisfaction strongly increases attrition risk</li>
+                    </ul>
+                </div>
+
+            </div>
+        </article>
+
+        <!-- MODEL -->
+        <article class="detail-section">
+            <h2>Model Development</h2>
+
+            <div class="detail-grid">
+
+                <div class="detail-card">
+                    <h3>Pipeline</h3>
+                    <p>
+                        Built a full preprocessing pipeline using ColumnTransformer for encoding,
+                        scaling, and feature transformation.
+                    </p>
+                </div>
+
+                <div class="detail-card">
+                    <h3>Models Compared</h3>
+                    <ul>
+                        <li>Logistic Regression (Best)</li>
+                        <li>Support Vector Machine</li>
+                        <li>Decision Tree</li>
+                        <li>Random Forest</li>
+                    </ul>
+                </div>
+
+                <div class="detail-card">
+                    <h3>Evaluation Strategy</h3>
+                    <p>
+                        Optimized for Recall to minimize missed attrition cases and ensure better business impact.
+                    </p>
+                </div>
+
+                <div class="detail-card">
+                    <h3>Results</h3>
+                    <p>
+                        Achieved ~79–80% recall using Logistic Regression with class imbalance handling.
+                    </p>
+                </div>
+
+            </div>
+        </article>
+
+        <!-- FEATURES -->
+        <article class="detail-section">
+            <h2>System Features</h2>
+
+            <div class="detail-grid">
+
+                <div class="detail-card">
+                    <h3>Prediction System</h3>
+                    <ul>
+                        <li>Employee likely to leave</li>
+                        <li>Employee likely to stay</li>
+                    </ul>
+                </div>
+
+                <div class="detail-card">
+                    <h3>Dashboard</h3>
+                    <ul>
+                        <li>Attrition by department</li>
+                        <li>Travel frequency impact</li>
+                        <li>Workforce distribution insights</li>
+                    </ul>
+                </div>
+
+            </div>
+        </article>
+
+        <!-- DEPLOYMENT -->
+        <article class="detail-section">
+            <h2>Deployment</h2>
+            <p>
+                Model deployed using Streamlit with a user interface for real-time predictions.
+                Model saved using Pickle/Joblib for integration.
+            </p>
+        </article>
+
+        <!-- FUTURE -->
+        <article class="detail-section">
+            <h2>Future Improvements</h2>
+            <ul>
+                <li>SHAP for model explainability</li>
+                <li>Improved feature engineering</li>
+                <li>Better handling of class imbalance</li>
+            </ul>
+        </article>
+
+    </section>
+
+</div>
+
+</body>
+</html>

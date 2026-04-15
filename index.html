@@ -2,79 +2,571 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Mayank Joshi | Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mayank Joshi | Data Scientist Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<nav>
-    <h2>Mayank Joshi</h2>
-    <ul>
-        <li><a href="#about">About</a></li>
+    <nav class="navbar">
+        <a class="brand" href="#home">Mayank Joshi</a>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#resume">Resume</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#contact">Connect</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="hero reveal" id="home">
+            <div class="hero-copy reveal">
+                <p class="eyebrow">Data Analytics | Data Science | Business Intelligence</p>
+                <h1>Mayank Joshi</h1>
+                <p class="hero-line">
+                  I build data-driven solutions using Python, SQL, and Machine Learning to solve real-world problems.
+                </p>
+
+                <p class="hero-text">
+                    From healthcare systems like MediScan to career analytics engines,
+                    my work focuses on combining machine learning with real-world usability and decision-making.
+                </p>
+                <div class="hero-actions">
+                    <a class="btn btn-primary" href="#projects">Explore Projects</a>
+                    <a class="btn btn-secondary" href="#contact">Connect With Me</a>
+                </div>
+                <div class="hero-highlights">
+                    <div class="stat-card reveal">
+                        <span class="stat-label">Core Area</span>
+                        <strong>Applied Data Science</strong>
+                    </div>
+                    <div class="stat-card reveal">
+                        <span class="stat-label">Strength</span>
+                        <strong>Analytics + Storytelling</strong>
+                    </div>
+                    <div class="stat-card reveal">
+                        <span class="stat-label">Current Focus</span>
+                        <strong>ML Projects That Ship</strong>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-visual reveal">
+                <div class="blob-shell">
+                    <img
+                        src="assets/profile.jpg"
+                        alt="Portrait of Mayank Joshi"
+                        class="profile-photo"
+                        onerror="this.style.display='none'; this.nextElementSibling.style.display='grid';"
+                    >
+                    <div class="photo-fallback">
+                        <span>Your photo</span>
+                        <small>Add `assets/profile.jpg`</small>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-section reveal" id="about">
+            <div class="section-heading reveal">
+                <h2 class="section-tag">About Me</h2>
+                <p class="section-subtitle">A short introduction to how I think, build, and communicate with data.</p>
+            </div>
+            <div class="about-grid">
+                <article class="panel reveal">
+                    <h3>Who I Am</h3>
+                    <p>
+                        I am a data science enthusiast focused on solving real-world problems using data.
+                        I work across data cleaning, analysis, machine learning, and deployment to build complete systems.
+                    </p>
+                </article>
+                <article class="panel reveal">
+                    <h3>What I Bring</h3>
+                    <p>
+                        I build end-to-end projects in healthcare, HR analytics, sustainability, and career readiness.
+                        My focus is not just models, but creating systems that provide actionable insights and real user value.
+                    </p>
+                </article>
+            </div>
+        </section>
+
+        <section class="content-section reveal" id="education">
+    <div class="section-heading reveal">
+        <h2 class="section-tag">Education</h2>
+        <p class="section-subtitle">My academic journey and focus areas in technology and data science.</p>
+    </div>
+
+    <div class="timeline">
+
+        <article class="timeline-card reveal">
+            <span class="timeline-year">2022 – 2026</span>
+            <h3>B.Tech in Information Technology</h3>
+            <p>Sushila Devi Bansal College of Technology</p>
+            <p>Current CGPA: 6.79 | Final Year (8th Semester)</p>
+            <p>Focus: Machine Learning, Data Analysis, and Real-World Project Development</p>
+        </article>
+
+        <article class="timeline-card reveal">
+            <span class="timeline-year">2020 – 2022</span>
+            <h3>Higher Secondary (12th - MP Board)</h3>
+            <p>Guru Kripa High Secondary School, Ghatabillodhar</p>
+            <p>Percentage: 67.4%</p>
+        </article>
+
+        <article class="timeline-card reveal">
+            <span class="timeline-year">Learning Focus</span>
+            <h3>Practical Skill Development</h3>
+            <p>
+                Focused on building real-world projects in healthcare, HR analytics, and sustainability,
+                along with hands-on experience in machine learning, data analysis, and deployment.
+            </p>
+                    </article>
+                
+                </div>
+            </section>
+
+        <section class="content-section reveal" id="projects">
+            <div class="section-heading reveal">
+                <h2 class="section-tag">Projects</h2>
+                <p class="section-subtitle">A recruiter-friendly snapshot of the work, tools, links, and deployment status for each build.</p>
+            </div>
+
+            <div class="card-grid project-grid">
+                <article class="project-card project-live reveal">
+                    <div class="project-top">
+                        <span class="card-kicker">Healthcare ML</span>
+                        <span class="project-status status-live">Live App</span>
+                    </div>
+                    <h3>MediScan</h3>
+                    <p>ML-powered healthcare system that predicts diseases from symptoms, provides severity-based guidance, and suggests nearby hospitals.</p>
+                    <div class="project-meta">
+                        <span>Python</span>
+                        <span>Scikit-learn</span>
+                        <span>Streamlit</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="projects/mediscan.html">View Details</a>
+                        <a href="https://github.com/Mayankjoshi341/MEDISCAN/tree/main/MediScan">GitHub</a>
+                        <a href="https://www.linkedin.com/feed/update/urn:li:activity:7434690073696161793/?originTrackingId=m5JLJX4v71FFfzhht5%2BlYw%3D%3D">LinkedIn</a>
+                        <a href="https://mayankjoshi341-mediscan-mediscanmediscan-app-bdn9oe.streamlit.app/">Live Demo</a>
+                    </div>
+                </article>
+
+                <article class="project-card project-build reveal">
+                    <div class="project-top">
+                        <span class="card-kicker">Career Analytics</span>
+                        <span class="project-status status-build">In Progress</span>
+                    </div>
+                    <h3>Placement Readiness Engine</h3>
+                    <p>ML-based system that evaluates student readiness using clustering and generates personalized career insights and improvement plans.</p>
+                    <div class="project-meta">
+                        <span>Python</span>
+                        <span>EDA</span>
+                        <span>Recommendation Logic</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="projects/placement.html">View Details</a>
+                        <a href="https://github.com/Mayankjoshi341/Placement-Readiness-Analytics-Engine/tree/main/Placement_readiness">GitHub</a>
+                        <a href="#" title="Add your LinkedIn post or article URL">LinkedIn</a>
+                        <a href="#" title="Add your deployed dashboard URL">Live Demo</a>
+                    </div>
+                </article>
+
+                <article class="project-card project-build reveal">
+                    <div class="project-top">
+                        <span class="card-kicker">Sustainability</span>
+                        <span class="project-status status-build">Case Study</span>
+                    </div>
+                    <h3>CO₂ Emission Forecasting</h3>
+                    <p>Time-series forecasting project analyzing global CO₂ trends using machine learning and recursive vs direct prediction strategies.</p>
+                    <div class="project-meta">
+                        <span>Python</span>
+                        <span>Pandas</span>
+                        <span>Visualization</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="projects/co2.html">View Details</a>
+                        <a href="#" title="Add your GitHub project URL">GitHub</a>
+                        <a href="#" title="Add your LinkedIn post or article URL">LinkedIn</a>
+                    </div>
+                </article>
+
+                <article class="project-card project-live reveal">
+                    <div class="project-top">
+                        <span class="card-kicker">HR Intelligence</span>
+                        <span class="project-status status-live">Ready Demo</span>
+                    </div>
+                    <h3>HR Attrition Prediction System</h3>
+                    <p>Machine learning system that predicts employee attrition and provides insights to reduce workforce turnover.</p>
+                    <div class="project-meta">
+                        <span>Tableau</span>
+                        <span>Excel</span>
+                        <span>Dashboard Design</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="projects/hr.html">View Details</a>
+                        <a href="https://github.com/Mayankjoshi341/minor-project/tree/main/minor-project-7sem">GitHub</a>
+                        <a href="#" title="Add your LinkedIn post or article URL">LinkedIn</a>
+                        <a href="#" title="Add your deployed dashboard URL">Live Demo</a>
+                    </div>
+                </article>
+            </div>
+
+            <details class="more-projects">
+                <summary class="btn btn-secondary">More Projects</summary>
+                <div class="card-grid project-grid more-project-grid">
+                    <article class="project-card reveal">
+                        <div class="project-top">
+                            <span class="card-kicker">Forecasting</span>
+                            <span class="project-status status-build">Concept</span>
+                        </div>
+                        <h3>Sales Forecast Studio</h3>
+                        <p>Space for a forecasting project featuring trend modeling, business KPIs, and interactive scenario planning.</p>
+                        <div class="project-meta">
+                            <span>Time Series</span>
+                            <span>Python</span>
+                            <span>Business Insight</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#">View Details</a>
+                            <a href="#" title="Add your GitHub project URL">GitHub</a>
+                            <a href="#" title="Add your LinkedIn post or article URL">LinkedIn</a>
+                        </div>
+                    </article>
+
+                    <article class="project-card reveal">
+                        <div class="project-top">
+                            <span class="card-kicker">Customer Analytics</span>
+                            <span class="project-status status-build">Concept</span>
+                        </div>
+                        <h3>Customer Churn Explorer</h3>
+                        <p>Placeholder card for a churn prediction or segmentation project with metrics, model interpretation, and retention strategy.</p>
+                        <div class="project-meta">
+                            <span>Classification</span>
+                            <span>SQL</span>
+                            <span>BI Reporting</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#">View Details</a>
+                            <a href="#" title="Add your GitHub project URL">GitHub</a>
+                            <a href="#" title="Add your LinkedIn post or article URL">LinkedIn</a>
+                        </div>
+                    </article>
+                </div>
+            </details>
+        </section>
+
+        <section class="content-section reveal" id="skills">
+            <div class="section-heading reveal">
+                <h2 class="section-tag">Skills</h2>
+                <p class="section-subtitle">A toolkit for analysis, experimentation, dashboards, and communicating insights clearly.</p>
+            </div>
+            <div class="card-grid skills-grid">
+                <article class="panel reveal">
+                    <h3>Programming</h3>
+                    <p>Python, SQL, HTML, CSS</p>
+                </article>
+                <article class="panel reveal">
+                    <h3>Data Analysis</h3>
+                    <p>Pandas, NumPy, Excel, data cleaning, feature engineering, exploratory data analysis (EDA)</p>
+                </article>
+                <article class="panel reveal">
+                    <h3>Visualization</h3>
+                    <p>Matplotlib, Seaborn, Tableau, data visualization, dashboard design, insight communication</p>
+                </article>
+                <article class="panel reveal">
+                    <h3>Machine Learning</h3>
+                    <p>Scikit-learn, Statsmodels, SciPy, classification, regression, model evaluation</p>
+                </article>
+                <article class="panel reveal">
+                    <h3>Tools</h3>
+                    <p>GitHub, VS Code, Streamlit, Flask, Jupyter Notebook</p>
+                </article>
+                <article class="panel reveal">
+                    <h3>Soft Skills</h3>
+                    <p>Problem solving, data storytelling, analytical thinking, communication</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="content-section reveal" id="certificates">
+    <div class="section-heading reveal">
+        <h2 class="section-tag">Certificates</h2>
+        <p class="section-subtitle">Courses and certifications that support my data science and machine learning journey.</p>
+    </div>
+
+    <div class="card-grid">
+
+        <article class="panel reveal">
+            <h3>Completed Certifications</h3>
+            <ul>
+                <li>Python for Data Science – Great Learning</li>
+                <li>Data Cleaning using Pandas – Great Learning</li>
+            </ul>
+        </article>
+
+        <article class="panel reveal">
+            <h3>Ongoing Learning</h3>
+            <ul>
+                <li>Complete Data Science Bootcamp 2026 – Unacademy</li>
+                <li>Data, Data, Everywhere – Google (Coursera)</li>
+                <li>Supervised Machine Learning – Andrew Ng (Coursera)</li>
+            </ul>
+        </article>
+
+    </div>
+</section>
+
+        <section class="content-section reveal" id="resume">
+            <div class="section-heading reveal">
+                <h2 class="section-tag">Resume</h2>
+                <p class="section-subtitle">A direct path for recruiters who want a quick downloadable summary.</p>
+            </div>
+            <div class="panel resume-panel reveal">
+                <p>
+                    Download my resume to learn more about my experience, projects, and technical skills.
+                </p>
+                <a class="btn btn-primary" href="assets/resume.pdf" download>Download Resume</a>
+            </div>
+        </section>
+
+        <section class="content-section reveal" id="contact">
+    <div class="section-heading reveal">
+        <h2 class="section-tag">Connect</h2>
+        <p class="section-subtitle">A clean final section for recruiters, collaborators, and hiring teams to reach out.</p>
+    </div>
+
+    <div class="card-grid contact-grid">
+
+        <article class="panel reveal">
+            <h3>Email</h3>
+            <p>
+                <a href="mailto:mayankjoshi0341@gmail.com">
+                    mayankjoshi0341@gmail.com
+                </a>
+            </p>
+        </article>
+
+        <article class="panel reveal">
+            <h3>Phone</h3>
+            <p>
+                <a href="tel:+916261104817">
+                    +91 6261104817
+                </a>
+            </p>
+        </article>
+
+        <article class="panel reveal">
+            <h3>LinkedIn</h3>
+            <p>
+                <a href="https://www.linkedin.com/in/mayank-joshi-94772324b/" target="_blank">
+                    View Profile
+                </a>
+            </p>
+        </article>
+
+        <article class="panel reveal">
+            <h3>GitHub</h3>
+            <p>
+                <a href="https://github.com/Mayankjoshi341" target="_blank">
+                    View Projects
+                </a>
+            </p>
+        </article>
+
+    </div>
+</section>
+    </main>
+    <script>
+        const revealItems = document.querySelectorAll(".reveal");
+
+        if ("IntersectionObserver" in window) {
+            const revealObserver = new IntersectionObserver((entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add("is-visible");
+                        revealObserver.unobserve(entry.target);
+                    }
+                });
+            }, {
+                threshold: 0.14,
+                rootMargin: "0px 0px -40px 0px"
+            });
+
+            revealItems.forEach((item) => revealObserver.observe(item));
+        } else {
+            revealItems.forEach((item) => item.classList.add("is-visible"));
+        }
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mayank Joshi | Data Scientist Portfolio</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<nav class="navbar">
+    <a class="brand" href="#home">Mayank Joshi</a>
+    <ul class="nav-links">
         <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#about">About</a></li>
         <li><a href="#resume">Resume</a></li>
         <li><a href="#contact">Contact</a></li>
     </ul>
 </nav>
-<header>
-    <img src="assets/profile.jpg" class="profile">
-    <h1>Mayank Joshi</h1>
-    <p>Data Science Enthusiast | Python, SQL & Machine Learning</p>
-</header>
 
-<section id="about">
-    <h2>About Me</h2>
-    <p>I build data-driven solutions using Python, SQL, and Machine Learning to solve real-world problems.</p>
+<main>
+
+<!-- HERO -->
+<section class="hero reveal" id="home">
+    <div class="hero-copy">
+        <p class="eyebrow">Data Science | Machine Learning | Analytics</p>
+
+        <h1>Mayank Joshi</h1>
+
+        <p class="hero-line">
+            I build data-driven solutions using Python, SQL, and Machine Learning to solve real-world problems.
+        </p>
+
+        <p class="hero-text">
+            From healthcare systems like MediScan to career analytics engines,
+            my work focuses on combining machine learning with real-world usability and decision-making.
+        </p>
+
+        <div class="hero-actions">
+            <a class="btn btn-primary" href="#projects">View Projects</a>
+            <a class="btn btn-secondary" href="assets/resume.pdf" download>Download Resume</a>
+        </div>
+    </div>
+
+    <div class="hero-visual">
+        <div class="blob-shell">
+            <img src="assets/profile.jpg" class="profile-photo">
+        </div>
+    </div>
 </section>
 
-<section id="projects">
+<!-- ABOUT -->
+<section class="content-section" id="about">
+    <h2>About Me</h2>
+
+    <p>
+        I am a data science enthusiast focused on building end-to-end solutions using data.
+        My work spans machine learning, analytics, and deployment, with projects in healthcare,
+        HR analytics, sustainability, and career intelligence.
+    </p>
+</section>
+
+<!-- PROJECTS -->
+<section class="content-section" id="projects">
     <h2>Projects</h2>
 
-    <div class="project-card">
-        <h3>MediScan</h3>
-        <p>ML-powered health risk prediction system with real-time hospital recommendations.</p>
-        <a href="projects/mediscan.html">View Details</a>
-    </div>
+    <div class="card-grid">
 
-    <div class="project-card">
-        <h3>Placement Readiness Engine</h3>
-        <p>Analyzes user readiness and provides insights for job preparation.</p>
-    </div>
+        <!-- MediScan -->
+        <div class="project-card">
+            <h3>MediScan</h3>
+            <p>
+                ML-powered healthcare system that predicts diseases from symptoms,
+                provides severity-based guidance, and suggests nearby hospitals.
+            </p>
 
+            <div class="project-links">
+                <a href="projects/mediscan.html">Details</a>
+                <a href="https://github.com/Mayankjoshi341/MEDISCAN/tree/main/MediScan">GitHub</a>
+            </div>
+        </div>
+
+        <!-- Placement -->
+        <div class="project-card">
+            <h3>Placement Readiness Engine</h3>
+            <p>
+                ML-based system that evaluates student readiness using clustering
+                and generates personalized career insights and improvement plans.
+            </p>
+
+            <div class="project-links">
+                <a href="projects/placement.html">Details</a>
+                <a href="https://github.com/Mayankjoshi341/Placement-Readiness-Analytics-Engine/tree/main/Placement_readiness">GitHub</a>
+            </div>
+        </div>
+
+        <!-- HR -->
+        <div class="project-card">
+            <h3>HR Attrition Prediction</h3>
+            <p>
+                Machine learning system that predicts employee attrition and provides
+                business insights to help reduce workforce turnover.
+            </p>
+
+            <div class="project-links">
+                <a href="projects/hr.html">Details</a>
+                <a href="https://github.com/Mayankjoshi341/minor-project/tree/main/minor-project-7sem">GitHub</a>
+            </div>
+        </div>
+
+        <!-- CO2 -->
+        <div class="project-card">
+            <h3>CO₂ Emission Forecasting</h3>
+            <p>
+                Time-series forecasting project analyzing global CO₂ trends
+                using machine learning and recursive vs direct prediction strategies.
+            </p>
+
+            <div class="project-links">
+                <a href="projects/co2.html">Details</a>
+                <a href="#">GitHub</a>
+            </div>
+        </div>
+
+    </div>
 </section>
 
-<section id="skills">
+<!-- SKILLS -->
+<section class="content-section" id="skills">
     <h2>Skills</h2>
 
-    <div class="project-card">
-        <h3>Programming</h3>
-        <p>Python, SQL</p>
-    </div>
-
-    <div class="project-card">
-        <h3>Data Analysis & Visualization</h3>
-        <p>Pandas, NumPy, Matplotlib, Seaborn, Excel, Tableau</p>
-    </div>
-
-    <div class="project-card">
-        <h3>Machine Learning</h3>
-        <p>Scikit-learn, Statsmodels, SciPy</p>
-    </div>
-
-    <div class="project-card">
-        <h3>Tools & Technologies</h3>
-        <p>GitHub, VS Code, Flask, Streamlit, HTML, CSS</p>
-    </div>
+    <p>
+        Python, SQL, Pandas, NumPy, Scikit-learn, Matplotlib, Seaborn,
+        Tableau, Flask, Streamlit, HTML, CSS, GitHub
+    </p>
 </section>
 
-<section id="resume">
+<!-- RESUME -->
+<section class="content-section" id="resume">
     <h2>Resume</h2>
-    <a href="assets/resume.pdf" download>Download Resume</a>
+    <a href="assets/resume.pdf" class="btn btn-primary" download>Download Resume</a>
 </section>
 
-<section id="contact">
+<!-- CONTACT -->
+<section class="content-section" id="contact">
     <h2>Contact</h2>
-    <p>GitHub | LinkedIn | Email</p>
+
+    <p>Email: your.email@gmail.com</p>
+    <p>GitHub: github.com/Mayankjoshi341</p>
+    <p>LinkedIn: your-linkedin-link</p>
 </section>
+
+</main>
 
 </body>
 </html>
